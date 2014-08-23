@@ -3768,7 +3768,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar {
   position: relative;
-  min-height: 50px;
+  /* Anson */
+  min-height: 80px;
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
@@ -3879,8 +3880,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  height: 50px;
-  padding: 15px 15px;
+  /* Anson */
+  height: 80px;
+  /* Anson */
+  /*padding: 0 100px;*/
+  /* Anson */
+  padding-top: 20px;
   font-size: 18px;
   line-height: 20px;
 }

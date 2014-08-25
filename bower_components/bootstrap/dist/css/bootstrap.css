@@ -899,7 +899,8 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #fff;
+  /* Anson */
+  background-color: #D6D6D6;
 }
 input,
 button,
@@ -4553,7 +4554,8 @@ a.list-group-item.active > .badge,
   padding: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #eee;
+  /* Anson */
+  background-color: #D6D6D6;
 }
 .jumbotron h1,
 .jumbotron .h1 {

@@ -5724,7 +5724,7 @@ button.close {
 }
 .carousel-inner {
   position: relative;
-  width: 100%;
+  /* Anson width: 100%; */
   overflow: hidden;
 }
 .carousel-inner > .item {
@@ -5857,16 +5857,18 @@ button.close {
   margin: 1px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #000 \9;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #fff;
+  /* Anson background-color: #000 \9; */
+  /* Anson */
+  background-color: #888A8B;
+  /* Anson border: 1px solid #fff; */
   border-radius: 10px;
 }
 .carousel-indicators .active {
   width: 12px;
   height: 12px;
   margin: 0;
-  background-color: #fff;
+  /* Anson */
+  background-color: #73CDEB;
 }
 .carousel-caption {
   position: absolute;
@@ -5907,7 +5909,7 @@ button.close {
     padding-bottom: 30px;
   }
   .carousel-indicators {
-    bottom: 20px;
+    bottom: -50px;
   }
 }
 .clearfix:before,

@@ -22,3 +22,9 @@ body {
 .navbar-inverse .navbar-rightnav > li > a {
   color: #f06478;
 }
+
+.carousel-inner {
+  width: 1000px;
+  height: 300px;
+  margin: 0 auto;
+}

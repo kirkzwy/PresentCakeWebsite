@@ -412,7 +412,8 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
       $active
         .one('bsTransitionEnd', function () {
           $next.removeClass([type, direction].join(' ')).addClass('active')
-          $active.removeClass(['active', direction].join(' '))
+          /** Anson **/
+          $active.removeClass('active')
           that.sliding = false
           setTimeout(function () {
             that.$element.trigger(slidEvent)

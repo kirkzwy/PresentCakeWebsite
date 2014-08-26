@@ -5721,15 +5721,30 @@ button.close {
 }
 .carousel {
   position: relative;
+  /* Anson */
+  top: 35px;
+  /* Anson */
+  width: 98%;
+  /* Anson */
+  height: 350px;
+  /* Anson */
+  overflow-x: hidden;
+  /* Anson */
+  overflow-y: visible;
+  /* Anson */
+  margin: 0 auto;
 }
 .carousel-inner {
   position: relative;
   /* Anson width: 100%; */
-  overflow: hidden;
+  overflow: visible;
 }
 .carousel-inner > .item {
-  position: relative;
-  display: none;
+  /* Anson */
+  position: absolute;
+  /* Anson */
+  top: 0;
+  /* Anson display: none; */
   -webkit-transition: .6s ease-in-out left;
        -o-transition: .6s ease-in-out left;
           transition: .6s ease-in-out left;
@@ -5762,7 +5777,8 @@ button.close {
 .carousel-inner > .prev.right {
   left: 0;
 }
-.carousel-inner > .active.left {
+/* Anson */
+.carousel-inner > .item.left {
   left: -100%;
 }
 .carousel-inner > .active.right {
@@ -5770,33 +5786,39 @@ button.close {
 }
 .carousel-control {
   position: absolute;
+  /* Anson */
   top: 0;
-  bottom: 0;
   left: 0;
-  width: 15%;
+  /* Anson */
+  width: 20%;
+  /* Anson */
+  height: 300px;
   font-size: 20px;
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
   filter: alpha(opacity=50);
-  opacity: .5;
+  /* Anson */
+  opacity: .9;
 }
+/* Anson */
 .carousel-control.left {
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
-  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
-  background-image:         linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+  background-image: -webkit-linear-gradient(left, rgba(214, 214, 214, .8) 0%, rgba(214, 214, 214, 0.001) 100%);
+  background-image:      -o-linear-gradient(left, rgba(214, 214, 214, .8) 0%, rgba(214, 214, 214, 0.001)) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(214, 214, 214, .8)), to(rgba(214, 214, 214, 0.001))));
+  background-image:         linear-gradient(to right, rgba(214, 214, 214, .8) 0%, rgba(214, 214, 214, 0.001)) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFF5', endColorstr='#FFFFFF05', GradientType=1);
   background-repeat: repeat-x;
 }
+/* Anson */
 .carousel-control.right {
   right: 0;
   left: auto;
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
-  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
-  background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+  background-image: -webkit-linear-gradient(left, rgba(214, 214, 214, 0.001)) 0%, rgba(214, 214, 214, .8) 100%);
+  background-image:      -o-linear-gradient(left, rgba(214, 214, 214, 0.001)) 0%, rgba(214, 214, 214, .8) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(214, 214, 214, 0.001))), to(rgba(214, 214, 214, .8)));
+  background-image:         linear-gradient(to right, rgba(214, 214, 214, 0.001)) 0%, rgba(214, 214, 214, .8) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF05', endColorstr='#FFFFFFF5', GradientType=1);
   background-repeat: repeat-x;
 }
 .carousel-control:hover,
@@ -5841,7 +5863,7 @@ button.close {
 }
 .carousel-indicators {
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
   left: 50%;
   z-index: 15;
   width: 60%;
@@ -5908,9 +5930,9 @@ button.close {
     left: 20%;
     padding-bottom: 30px;
   }
-  .carousel-indicators {
+  /* Anson .carousel-indicators {
     bottom: -50px;
-  }
+  } */
 }
 .clearfix:before,
 .clearfix:after,

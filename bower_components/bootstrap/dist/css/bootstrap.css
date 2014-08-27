@@ -5781,7 +5781,8 @@ button.close {
 .carousel-inner > .item.left {
   left: -100%;
 }
-.carousel-inner > .active.right {
+/* Anson */
+.carousel-inner > .item.right {
   left: 100%;
 }
 .carousel-control {

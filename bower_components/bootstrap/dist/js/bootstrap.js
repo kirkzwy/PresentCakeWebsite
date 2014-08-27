@@ -303,7 +303,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
   Carousel.VERSION  = '3.2.0'
 
   Carousel.DEFAULTS = {
-    interval: 5000,
+    interval: 4000,
     pause: 'hover',
     wrap: true
   }
@@ -370,11 +370,17 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
     return this.slide('prev')
   }
 
-  Carousel.prototype.slide = function (type, next) {
+  Carousel.prototype.slide = function (type, next, prev) {
     var $active   = this.$element.find('.item.active')
-    var $next     = next || $active[type]()
+    //var $next     = next || $active[type]()
+    /** Anson:begin **/
+    //var $prev     = prev || $next[type]()
+    var $next = this.$element.find('.item.right')
+    var $prev = this.$element.find('.item.left')
     var isCycling = this.interval
     var direction = type == 'next' ? 'left' : 'right'
+    /** Anson **/
+    var Ndirection = type == 'next' ? 'right' : 'left'
     var fallback  = type == 'next' ? 'first' : 'last'
     var that      = this
 
@@ -406,14 +412,20 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
     var slidEvent = $.Event('slid.bs.carousel', { relatedTarget: relatedTarget, direction: direction }) // yes, "slid"
     if ($.support.transition && this.$element.hasClass('slide')) {
       $next.addClass(type)
-      $next[0].offsetWidth // force reflow
+      /** Anson **/
+      
+      //$prev[0].offsetWidth
+      //$next[0].offsetWidth // force reflow
       $active.addClass(direction)
-      $next.addClass(direction)
+      $prev.addClass(Ndirection)
       $active
         .one('bsTransitionEnd', function () {
-          $next.removeClass([type, direction].join(' ')).addClass('active')
           /** Anson **/
-          $active.removeClass('active')
+          $next.removeClass([type, direction, Ndirection].join(' ')).addClass('active')
+          /** Anson **/
+          $prev.removeClass(direction)
+          /** Anson **/
+          $active.removeClass('active').addClass(direction)
           that.sliding = false
           setTimeout(function () {
             that.$element.trigger(slidEvent)

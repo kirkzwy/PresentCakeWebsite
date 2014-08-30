@@ -121,14 +121,14 @@
 		};
 		
 		//  Move Unslider to a slide index
-		this.move = function(index, cb) {
+		this.move = function(index, sp, cb) {
 			//  If it's out of bounds, go to the first slide
 			if(!this.items.eq(index).length) index = 0;
 			if(index < 0) index = (this.items.length - 1);
 			
 			var target = this.items.eq(index);
 			var obj = {height: target.outerHeight()};
-			var speed = cb ? 5 : this.opts.speed;
+			var speed = sp ? sp : this.opts.speed;
 			
 			if(!this.items.is(':animated')) {			
 				//  Handle those pesky dots
@@ -206,7 +206,14 @@
 			
 			//  Add it to the Unslider
 			this.el.addClass('has-dots').append(html).find('.dot').click(function() {
-				_.move($(this).index());
+				var times = ($(this).index() - _.current < 0 ? $(this).index() - _.current + _.itemsLen : $(this).index() - _.current);
+				//_.move($(this).index());
+				//_.stop();
+				for (var i = 0; i < times; i++) {
+					_.items.stop(true, true);
+					_.move(_.current+1, 1);
+				}
+				//_.start();
 			});
 		};
 	};

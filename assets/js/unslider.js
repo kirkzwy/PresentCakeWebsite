@@ -71,7 +71,7 @@
 			this.el.css({
 				overflow: 'hidden',
 				width: _.max[0],
-				height: this.items.first().outerHeight()
+				height: this.items.first().outerHeight() + 40
 			});
 			
 			//  Set the relative widths
@@ -79,6 +79,7 @@
 			this.ul.css('height', 'this.items.first().outerHeight()');
 			//this.items.css('width', (100 / this.items.length) + '%');
 			//var itemsLen = this.items.length;
+			this.items.first().addClass('liactive');
 			this.items.each(function(index) {
 				$(this).css({
 					left: ((index == _.itemsLen - 1 ? -1 : index ) * 100) + '%',
@@ -128,7 +129,7 @@
 			if(index < 0) index = (this.items.length - 1);
 			
 			var target = this.items.eq(index);
-			var obj = {height: target.outerHeight()};
+			var obj = {height: target.outerHeight() + 40};
 			var speed = sp ? sp : this.opts.speed;
 			
 			if(!this.items.is(':animated')) {			
@@ -137,8 +138,9 @@
 
 				this.el.animate(obj, speed);
 				this.items.eq(((_.current + 2) >= _.itemsLen ? _.current + 2 - _.itemsLen : _.current + 2 )).css('left', '200%');
+				this.items.eq(index).addClass('liactive').siblings().removeClass('liactive');
 				this.items.animate({left: '-=100%'}, speed, function(data){
-					_.current = index
+					_.current = index;
 					$.isFunction(_.opts.complete) && !cb && _.opts.complete(_.el);
 				})
 

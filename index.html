@@ -96,8 +96,8 @@
         </li>
       </ul>
       <div class="arrows">
-        <a class="arrow prev" href="#">1</a>
-        <a class="arrow next" href="#">2</a>
+        <a class="arrow prev" href="#"></a>
+        <a class="arrow next" href="#"></a>
       </div>
     </div>
     <!-- slide show end -->
@@ -150,10 +150,10 @@
           dots   : true,
           //arrows : true
         })
-        $('.arrow').click(function() {
-          var fn = this.className.split(' ')[1];
-          unslider.data('unslider')[fn]();
-        });
+        //$('.arrow').click(function() {
+          //var fn = this.className.split(' ')[1];
+          //unslider.data('unslider')[fn]();
+        //});
       });
     </script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->

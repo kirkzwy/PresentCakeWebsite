@@ -148,7 +148,19 @@ body {
 	  color: #fff;
 	}
 	  .banner .arrow {
-	    display: inline;
-		padding-left: 10px;
-		cursor: pointer;
+	  position: absolute;
+	  top: 0;
+	  width: -webkit-calc(50% - 500px);
+      width: -moz-calc(50% - 500px);
+      width: -ms-calc(50% - 5000px);
+      width: calc(50% - 500px);
+	  cursor: pointer;
+	  background-color: #D6D6D6;
+	  opacity: 0.8;
 	  }
+	    .banner .arrow.prev{
+	    	left: 0;
+	    }
+	    .banner .arrow.next{
+	    	right: 0
+	    }

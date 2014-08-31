@@ -76,7 +76,9 @@
 			
 			//  Set the relative widths
 			//this.ul.css({width: (this.items.length * 98) + '%', position: 'relative'});
-			this.ul.css('height', 'this.items.first().outerHeight()');
+			/**this.ul.css({
+			  height: this.items.first().outerHeight()
+			});**/
 			//this.items.css('width', (100 / this.items.length) + '%');
 			//var itemsLen = this.items.length;
 			this.items.first().addClass('liactive');
@@ -86,7 +88,9 @@
 					//width: $(this).parent().width()
 				});
 			});
-			
+			this.el.find('.arrow').css({
+			  height: this.items.first().outerHeight()
+			});
 			
 			if(this.opts.delay !== f) {
 				this.start();

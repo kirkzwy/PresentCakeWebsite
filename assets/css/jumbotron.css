@@ -226,6 +226,45 @@ body {
 	padding-right: 40px;
 }
 
+/** signup style **/
+.signup-slogan{
+	color: #F06478;
+	font-size: 30px;
+	margin: 35px auto 10px 450px;
+}
+.warm-background-image{
+	margin-top: 20px;
+	min-height: 1000px;
+	background-image: url('../img/warmBackgroundImage.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: scroll;
+	background-size: 100% 100%;
+}
+  .warm-background-image .container{
+  	width: 1060px;
+  	min-height: 660px;
+  	background-color: rgba(242, 242, 242, 0.5);
+  	margin: 155px auto;
+  	position: relative;
+  }
+    .cake-head{
+    	width: 260px;
+    	height: 133px;
+    	background-image: url('../img/yellowPie_L.png');
+    	background-position: center center;
+    	background-size: 100% 100%;
+    	position: absolute;
+    	top: -60px;
+    	left: 400px;
+    }
+    .cake-input{
+    	box-sizing: border-box;
+    	display: inline-block;
+    	margin-top: 110px;
+    	border-right: solid 2px #979797;
+    }
+
 
 
 

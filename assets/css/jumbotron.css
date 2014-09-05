@@ -262,10 +262,161 @@ body {
     	box-sizing: border-box;
     	display: inline-block;
     	margin-top: 110px;
+    	width: 49%;
+    	vertical-align: top;
+    }
+    .sign-up{
     	border-right: solid 2px #979797;
     }
-
-
+    .cake-input form{
+    	margin: 0 auto;
+    	width: 75%;
+    }
+    .cake-input h3{
+    	font-size: 32px;
+    	color: #838383;
+    	margin-bottom: 20px;
+    }
+    .slogan{
+    	font-size: 24px;
+    	color: #E2E2E2;
+    	margin-bottom: 40px;
+    }
+    /**
+    .form-horizontal .input-prepend{
+    	display: inline-block;
+    	vertical-align: middle;
+    }
+    .input-prepend{
+    	margin-bottom: 25px;
+    	font-size: 0;
+    	white-space: nowrap;
+    }
+    .cake-input .input-prepend .add-on{
+    	width: 70px;
+    	height: 60px;
+    	background: none;
+    	line-height: 60px;
+    	margin-right: -1px;
+    	vertical-align: top;
+    	display: inline-block;
+    	padding: -4px 5px;
+    	font-weight: normal;
+    	text-align: center;
+    	border: 1px solid 7B7B7B;
+    }
+    .input-prepend .add-on:first-child{
+    	border-radius: 10px 0 0 10px;
+    }
+    **/
+.btn-signup {
+  color: #555555;
+  background-color: #73CDEB;
+  font-size: 20px;
+}
+.btn-signup:hover,
+.btn-signup:focus,
+.btn-signup:active,
+.btn-signup.active,
+.open > .dropdown-toggle.btn-signup {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+.btn-signup:active,
+.btn-signup.active,
+.open > .dropdown-toggle.btn-signup {
+  background-image: none;
+}
+.btn-signup.disabled,
+.btn-signup[disabled],
+fieldset[disabled] .btn-signup,
+.btn-signup.disabled:hover,
+.btn-signup[disabled]:hover,
+fieldset[disabled] .btn-signup:hover,
+.btn-signup.disabled:focus,
+.btn-signup[disabled]:focus,
+fieldset[disabled] .btn-signup:focus,
+.btn-signup.disabled:active,
+.btn-signup[disabled]:active,
+fieldset[disabled] .btn-signup:active,
+.btn-signup.disabled.active,
+.btn-signup[disabled].active,
+fieldset[disabled] .btn-signup.active {
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.btn-signup .badge {
+  color: #5bc0de;
+  background-color: #fff;
+}
+.sign-up .btn-lg, .login .btn-lg{
+	border-radius: 2px;
+}
+.control-group, .control-group a{
+	margin-bottom: 5px;
+	font-size: 16px;
+	color: #555555;
+}
+.control-group .control-group-input{
+	display: inline-block;
+}
+.control-group input{
+	background-color: transparent;
+}
+.control-group p{
+	display: inline-block;
+}
+.btn-login {
+  color: #555555;
+  background-color: #F06478;
+  font-size: 20px;
+}
+.btn-login:hover,
+.btn-login:focus,
+.btn-login:active,
+.btn-login.active,
+.open > .dropdown-toggle.btn-login {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.btn-login:active,
+.btn-login.active,
+.open > .dropdown-toggle.btn-login {
+  background-image: none;
+}
+.btn-login.disabled,
+.btn-login[disabled],
+fieldset[disabled] .btn-login,
+.btn-login.disabled:hover,
+.btn-login[disabled]:hover,
+fieldset[disabled] .btn-login:hover,
+.btn-login.disabled:focus,
+.btn-login[disabled]:focus,
+fieldset[disabled] .btn-login:focus,
+.btn-login.disabled:active,
+.btn-login[disabled]:active,
+fieldset[disabled] .btn-login:active,
+.btn-login.disabled.active,
+.btn-login[disabled].active,
+fieldset[disabled] .btn-login.active {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.btn-login .badge {
+  color: #d9534f;
+  background-color: #fff;
+}
+.login-sns{
+	margin-top: 30px;
+	font-size: 20px;
+	color: #555555;
+}
+.login-sns img{
+	display: inline-block;
+	margin-right: 25px;
+}
 
 
 

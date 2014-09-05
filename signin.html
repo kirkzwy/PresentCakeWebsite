@@ -54,26 +54,26 @@
       <div class="container">
         <div class="cake-head"></div>
         <div class="sign-up cake-input">
-          <form accept-charset="UTF-8" acction="/users" class="user-form" id="sign_up" method="post">
+          <form accept-charset="UTF-8" acction="/users" class="form-horizontal" id="sign_up" method="post">
             <p id="signup_errors" class="signin_error hide"></p>
             <h3>使用邮件注册</h3>
             <p class="slogan">为朋友订制惊喜，为自己留下感动</p>
-            <div class="input-prepend">
-              <span class="add-on"><i class="icon-envelope-alt"></i></span>
-              <input class="span2" id="sign_up_email" name="email" placeholder="你的邮件地址" type="text" value="" />
+            <div class="input-group input-group-lg">
+              <span class="input-group-addon glyphicon glyphicon-user"></span>
+              <input class="form-control" id="sign_up_email" name="email" placeholder="你的邮件地址" type="text" value="" />
             </div>
             <br>
-            <div class="input-prepend">
-              <span class="add-on"><i class="icon-user"></i></span>
-              <input class="span2" id="nickname" name="nickname" placeholder="选一个昵称" type="text" value="" />
+            <div class="input-group input-group-lg">
+              <span class="input-group-addon glyphicon glyphicon-envelope"></span>
+              <input class="form-control" id="nickname" name="nickname" placeholder="选一个昵称" type="text" value="" />
             </div>
             <br>
-            <div class="input-prepend">
-              <span class="add-on"><i class="icon-unlock-alt"></i></span>
-              <input class="span2" id="sign_up_password" name="password" placeholder="输入密码" type="password" />
+            <div class="input-group input-group-lg">
+              <span class="input-group-addon glyphicon glyphicon-lock"></span>
+              <input class="form-control" id="sign_up_password" name="password" placeholder="输入密码" type="password" />
             </div>
             <br>
-            <button class="ladda-button submit-button" data-color="blue">
+            <button class="btn btn-signup btn-lg btn-block" data-color="blue">
               <span class="ladda-label">注册</span>
             </button>
           </form>
@@ -82,28 +82,29 @@
           <form accept-charset="UTF-8" acction="/sessions" class="user-form" id="login" method="post">
             <p id="signup_errors" class="signin_error hide"></p>
             <h3>登陆</h3>
-            <div class="input-prepend">
-              <span class="add-on"><i class="icon-user"></i></span>
-              <input class="span2" id="nickname" name="nickname" placeholder="选一个昵称" type="text" value="" />
+            <div class="input-group input-group-lg">
+              <span class="input-group-addon glyphicon glyphicon-envelope"></span>
+              <input class="form-control" id="nickname" name="nickname" placeholder="输入注册邮箱" type="text" value="" />
             </div>
             <br>
-            <div class="input-prepend">
-              <span class="add-on"><i class="icon-unlock-alt"></i></span>
-              <input class="span2" id="sign_up_password" name="password" placeholder="输入密码" type="password" />
+            <div class="input-group input-group-lg">
+              <span class="input-group-addon glyphicon glyphicon-lock"></span>
+              <input class="form-control" id="sign_up_password" name="password" placeholder="输入密码" type="password" />
             </div>
             <br>
             <div class="control-group">
-              <input id="remember_me" name="remember_me" type="checkbox" value="true" /> 记住我 | <a href="/users/password/new">忘记密码</a>
+              <div class="control-group-input"><input id="remember_me" name="remember_me" type="checkbox" value="true" /></div>
+              <p>记住我 | <a href="/users/password/new">忘记密码</a></p>
             </div>
-            <button class="ladda-button submit-button" data-color="blue">
+            <button class="btn btn-login btn-lg btn-block" data-color="blue">
               <span class="ladda-label">登陆</span>
             </button>
             <div class="login-sns">
-              <span>使用社交账户直接登录:</span>
-              <a href="/users/auth/qq_connect"><img alt="Qq connect" src="http://baijii-common.b0.upaiyun.com/social_icons/96x96/qq_connect.png" /></a>
-              <a href="/users/auth/weibo"><img alt="Weibo" src="http://baijii-common.b0.upaiyun.com/social_icons/96x96/weibo.png" /></a>
-              <a href="/users/auth/douban"><img alt="Douban" src="http://baijii-common.b0.upaiyun.com/social_icons/96x96/douban.png" /></a>
-              <a href="/users/auth/google_oauth2"><img alt="Google oauth2" src="http://baijii-common.b0.upaiyun.com/social_icons/96x96/google_oauth2.png" /></a>
+              <p>使用社交账户直接登录:</p>
+              <a href="/users/auth/qq_connect"><img alt="Qq connect" src="../PresentCakeWebsite/assets/img/qq_S@2x.png" /></a>
+              <a href="/users/auth/weibo"><img alt="Weibo" src="../PresentCakeWebsite/assets/img/sina_weibo_S@2x.png" /></a>
+              <a href="/users/auth/douban"><img alt="Douban" src="../PresentCakeWebsite/assets/img/douban_S@2x.png" /></a>
+              <a href="/users/auth/google_oauth2"><img alt="Google oauth2" src="../PresentCakeWebsite/assets/img/googleplus_S@2x.png" /></a>
             </div>
           </form>
         </div>
